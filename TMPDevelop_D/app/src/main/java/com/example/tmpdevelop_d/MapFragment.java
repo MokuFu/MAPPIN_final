@@ -208,7 +208,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         getSavedMarkerFromDatabase();
 
         // 調用重載地圖並添加全部圖釘和折線的方法 (從資料庫獲取需要時間，因此需要在重載圖釘前設定一定的延遲)
-        new Handler().postDelayed(() -> reloadMarker(), 1000);
+        new Handler().postDelayed(() -> reloadMarker(), 2000);
 
         // 調用點擊行程連接線反轉色彩的方法
         onPolylineClick(mMap);
